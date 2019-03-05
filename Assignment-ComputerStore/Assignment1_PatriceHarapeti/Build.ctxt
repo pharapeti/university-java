@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Build
+comment1.params=
+comment1.target=Build()
+comment10.params=cash
+comment10.target=java.lang.String\ formatted(double)
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=void\ use()
+comment3.params=
+comment3.target=void\ newBuild()
+comment4.params=
+comment4.target=void\ add()
+comment5.params=
+comment5.target=void\ remove()
+comment6.params=
+comment6.target=void\ show()
+comment7.params=
+comment7.target=void\ check()
+comment8.params=
+comment8.target=double\ priceCheck()
+comment9.params=
+comment9.target=void\ help()
+numComments=12

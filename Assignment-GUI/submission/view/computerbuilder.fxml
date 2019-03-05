@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="683.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComputerBuilderController">
+    <HBox alignment="center" spacing="10">
+        <ImageView fx:id="imageView" fitHeight="362.0" fitWidth="483.0" layoutX="29.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+            <image>
+                <Image url="@parts.jpg" />
+             </image>
+        </ImageView>
+    </HBox>
+    <GridPane alignment="center" hgap="10" vgap="10">
+        <Label alignment="CENTER" prefHeight="40.0" prefWidth="443.0" styleClass="h1" text="Computer Builder" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+        <Button fx:id="openCatalogueMeuBtn" onAction="#handleOpenCatalogue" prefWidth="245.0" styleClass="largeButton" text="View Catalogue" wrapText="true" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="8.0" />
+         </GridPane.margin></Button>
+        <Button fx:id="openBuildMenuBtn" onAction="#handleOpenBuild" prefWidth="245.0" styleClass="largeButton" text="View Build" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="8.0" right="8.0" top="8.0" />
+         </GridPane.margin></Button>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>  
+    <HBox alignment="center" prefWidth="396.0" spacing="10">  
+        <Button fx:id="quitBtn" alignment="center" onAction="#handleQuit" prefWidth="46.0" text="Quit" translateY="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <HBox.margin>
+            <Insets top="2.0" />
+         </HBox.margin></Button>
+    </HBox>
+    <stylesheets>
+        <URL value="@computerbuilder.css" />
+    </stylesheets>
+
+</VBox>

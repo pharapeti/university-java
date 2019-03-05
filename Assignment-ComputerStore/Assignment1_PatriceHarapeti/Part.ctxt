@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Part
+comment1.params=name\ type\ price
+comment1.target=Part(java.lang.String,\ java.lang.String,\ double)
+comment2.params=searchType\ minimumPrice
+comment2.target=boolean\ search(java.lang.String,\ double)
+comment3.params=searchType\ minimumPrice\ maximumPrice
+comment3.target=boolean\ search(java.lang.String,\ double,\ double)
+comment4.params=minPrice\ maxPrice
+comment4.target=boolean\ isPricedBetween(int,\ int)
+comment5.params=
+comment5.target=java.lang.String\ getType()
+comment6.params=
+comment6.target=double\ getPrice()
+comment7.params=cash
+comment7.target=java.lang.String\ formatted(double)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9

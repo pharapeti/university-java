@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxWidth="500.0" minHeight="300.0" minWidth="500.0" prefHeight="723.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CatalogueController">
+    <GridPane hgap="10" styleClass="root" vgap="10">
+<!--        ListView-->
+        <TableView fx:id="catalogueTableView" GridPane.columnIndex="0" GridPane.columnSpan="5" GridPane.rowIndex="0">
+            <TableColumn fx:id="typeColumn" />
+            <TableColumn fx:id="nameColumn" />
+            <TableColumn fx:id="priceColumn" />
+        </TableView>
+<!--        Description Label-->
+        <Label styleClass="h2" text="Filters" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+<!--        Type-->
+        <HBox translateX="-10.0" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="2">
+            <Label styleClass="root" text="Type:" />
+            <TextField fx:id="typeTfield" prefHeight="26.0" prefWidth="356.0" translateX="55.0" translateY="5.0" />
+        </HBox>
+<!--        Price Range-->
+        <HBox prefWidth="459.0" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="3">
+            <Label prefHeight="36.0" prefWidth="133.0" styleClass="root" text="Price Range:" translateX="-10.0" />
+            <TextField fx:id="minPriceTfield" prefHeight="26.0" prefWidth="192.0" translateY="5.0" />
+            <Label styleClass="root" text="to" translateX="5.0" />
+            <TextField fx:id="maxPriceTfield" prefHeight="26.0" prefWidth="177.0" translateX="10.0" translateY="5.0" />
+        </HBox>
+<!--        Buttons-->
+        <Button fx:id="addSelectedToBuildBtn" onAction="#handleSelectedToBuild" text="Add Selected to Build" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Button fx:id="addPartBtn" onAction="#handleAddPart" text="Add New Part to Catalogue" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <Button fx:id="removeSelectedBtn" onAction="#handleRemoveSelected" text="Remove Selected from Catalogue" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <Button fx:id="closeBtn" onAction="#handleClose" text="Close" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <stylesheets>
+	<URL value="@computerbuilder.css" />
+    </stylesheets>
+</VBox>
